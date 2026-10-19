@@ -8,8 +8,8 @@ import java.io.IOException;
 public class AnalisisApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        System.out.println(AnalisisSumatoria.sumatoriaIterativa(5));
-        System.out.println(AnalisisSumatoria.sumatoriaRecursiva(5));
-        System.out.println(AnalisisSumatoria.sumatoriaGauss(5));
+        System.out.println(AnalisisSumatoria.sumatoriaIterativa(5)[0]);
+        System.out.println(AnalisisSumatoria.sumatoriaRecursiva(5)[0]);
+        System.out.println(AnalisisSumatoria.sumatoriaGauss(5)[0]);
     }
 }
