@@ -20,5 +20,6 @@ public class AnalisisSumatoria {
         return i+sumatoriaRecursiva(n, i+1);
     }
 
+    public static int sumatoriaGauss(int n){return n*(n+1)/2;}
 
 }

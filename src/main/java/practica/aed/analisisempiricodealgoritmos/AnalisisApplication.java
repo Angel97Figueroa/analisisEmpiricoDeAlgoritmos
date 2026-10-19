@@ -10,6 +10,6 @@ public class AnalisisApplication extends Application {
     public void start(Stage stage) throws IOException {
         System.out.println(AnalisisSumatoria.sumatoriaIterativa(5));
         System.out.println(AnalisisSumatoria.sumatoriaRecursiva(5));
-
+        System.out.println(AnalisisSumatoria.sumatoriaGauss(5));
     }
 }
