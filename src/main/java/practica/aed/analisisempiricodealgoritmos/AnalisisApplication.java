@@ -10,9 +10,13 @@ import java.io.IOException;
 public class AnalisisApplication extends Application{
     @Override
     public void start(Stage stage) throws IOException{
-        long[][] sumatoriaIterativa=new long[99901][3];
-        for(int i=100; i<=100000; i++) sumatoriaIterativa[i-100]=AnalisisSumatoria.sumatoriaIterativa(i);
-        new Grafica(sumatoriaIterativa).show();
+        long[][] sumatoriaIterativa=new long[7][3];
+        int indice=0;
+        for(int i=100; i<=100000000; i*=10){
+            sumatoriaIterativa[indice]=AnalisisSumatoria.sumatoriaIterativa(i);
+            indice++;
+        }
+        new Grafica(sumatoriaIterativa, "Método iterativo").show();
     }
     public static void main(String[] args){launch(args);}
 }

@@ -3,7 +3,7 @@ package practica.aed.analisisempiricodealgoritmos;
 public class AnalisisSumatoria {
     public static long[] sumatoriaIterativa(long n){
         long startTime=System.nanoTime();
-        long[] resultado=new long[3]; //Indice 0=valor de la sumatoria, indice 1=tiempo de ejecucion (nS), Indice 3=n
+        long[] resultado=new long[3]; //Indice 0=valor de la sumatoria, indice 1=tiempo de ejecucion (nS), Indice 2=n
         resultado[0]=0;
         for(long i=1; i<=n; i++){
             resultado[0]+=i;
