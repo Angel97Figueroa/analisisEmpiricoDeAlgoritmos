@@ -18,7 +18,7 @@ public class AnalisisSumatoria {
         if(n<0) return new long[]{-1, System.nanoTime()-startTime};
         if(n==0) return new long[]{0, System.nanoTime()-startTime};
         if(n==1) return new long[]{1, System.nanoTime()-startTime};
-        long[] resultado=new long[3]; //Indice 0=valor de la sumatoria, indice 1=tiempo de ejecucion (nS), Indice 3=n
+        long[] resultado=new long[3]; //Indice 0=valor de la sumatoria, indice 1=tiempo de ejecucion (nS), Indice 2=n
         resultado[0]=1+sumatoriaRecursiva(n, 2);
         long endTime=System.nanoTime();
         resultado[1]=endTime-startTime;
@@ -33,7 +33,7 @@ public class AnalisisSumatoria {
 
     public static long[] sumatoriaGauss(long n){
         long startTime=System.nanoTime();
-        long[] resultado=new long[3]; //Indice 0=valor de la sumatoria, indice 1=tiempo de ejecucion (nS), Indice 3=n
+        long[] resultado=new long[3]; //Indice 0=valor de la sumatoria, indice 1=tiempo de ejecucion (nS), Indice 2=n
         resultado[0]=n*(n+1)/2;
         long endTime=System.nanoTime();
         resultado[1]=endTime-startTime;
